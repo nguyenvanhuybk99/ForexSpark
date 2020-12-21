@@ -9,8 +9,8 @@ from iostream._loader import Loader
 import re
 
 
-class TaskUsdEurLoader(Loader):
-    __source = "data/usdeur/usdeur_1027_1215.csv"
+class TaskGbpUsdLoader(Loader):
+    __source = "data/gbpusd/gbpusd_1102_1218"
 
     def __init__(self):
         self.__file = open(self.__source)

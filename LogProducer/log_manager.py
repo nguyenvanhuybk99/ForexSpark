@@ -1,4 +1,4 @@
-# author: Khanh.Quang 
+# author: Huy.Nguyen
 # institute: Hanoi University of Science and Technology
 # file name: log_manager.py
 # project name: LogProducer
@@ -6,8 +6,7 @@
 
 from connector import Connector, KafkaConnector
 from config import ConnectorConfig, LoggerConfig
-from logger import Logger, TaskUsdEurLogger
-# from logger import TaskEventLogger, TaskUsageLogger
+from logger import Logger, TaskUsdEurLogger, TaskGbpUsdLogger
 from timer import Timer
 
 from typing import List, Tuple, Set
@@ -24,12 +23,10 @@ def _get_connector(config: ConnectorConfig):
 
 def _get_logger(config: LoggerConfig):
     name = config.name
-    # if name == "TASK_USAGE":
-    #     return TaskUsageLogger.get_instance(config)
-    # elif name == "TASK_EVENT":
-    #     return TaskEventLogger.get_instance(config)
     if name == "TASK_USDEUR":
         return TaskUsdEurLogger.get_instance(config)
+    elif name == "TASK_GBPUSD":
+        return TaskGbpUsdLogger.get_instance(config)
     else:
         raise Exception("Not found type of logger config named {}".format(name))
 
@@ -79,11 +76,13 @@ class LogManager:
 
 
 if __name__ == '__main__':
-    task_usage_logger_config = LoggerConfig("TASK_USAGE", 300)
-    task_usage_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "TASK-USAGE")
-    task_event_logger_config = LoggerConfig("TASK_EVENT", 300)
-    task_event_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "TASK-EVENT")
-    manager = LogManager([(task_usage_logger_config, task_usage_connector_config),
-                          (task_event_logger_config, task_event_connector_config)],
-                         100, 5)
+    task_usdeur_logger_config = LoggerConfig("TASK_USDEUR", 2)
+    task_usdeur_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "USDEUR")
+    task_gbpusd_logger_config = LoggerConfig("TASK_GBPUSD", 2)
+    task_gbpusd_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "GBPUSD")
+
+    manager = LogManager([(task_usdeur_logger_config, task_usdeur_connector_config),
+                                    (task_gbpusd_logger_config, task_gbpusd_connector_config)],
+                                   100, 5)
+
     manager.dispatch_logs()

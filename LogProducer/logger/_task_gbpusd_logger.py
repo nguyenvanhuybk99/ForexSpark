@@ -5,30 +5,30 @@
 # date: 25/11/2020
 
 from logger._logger import Logger
-from logger._record import TaskUsdEurRecord
-from iostream import TaskUsdEurLoader
+from logger._record import TaskGbpUsdRecord
+from iostream import TaskGbpUsdLoader
 from config import LoggerConfig
 
 
-class TaskUsdEurLogger(Logger):
+class TaskGbpUsdLogger(Logger):
 
     __instance__ = None
 
     def __init__(self, config: LoggerConfig):
-        if TaskUsdEurLogger.__instance__ is None:
+        if TaskGbpUsdLogger.__instance__ is None:
             super().__init__()
             self.__config = config
-            self._loader = TaskUsdEurLoader()
-            self._recorder = TaskUsdEurRecord()
-            TaskUsdEurLogger.__instance__ = self
+            self._loader = TaskGbpUsdLoader()
+            self._recorder = TaskGbpUsdRecord()
+            TaskGbpUsdLogger.__instance__ = self
         else:
             raise Exception("Cannot create another instance of {}".format(self.__class__))
 
     @classmethod
     def get_instance(cls, config: LoggerConfig):
         if cls.__instance__ is None:
-            TaskUsdEurLogger(config)
+            TaskGbpUsdLogger(config)
         return cls.__instance__
 
     def get_name(self):
-        return "USDEUR LOGGER"
+        return "GBPUSD LOGGER"

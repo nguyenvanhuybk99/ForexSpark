@@ -15,15 +15,13 @@ class Main:
 
     @classmethod
     def setup(cls, msg_num=1, rate=1):
-        # task_usage_logger_config = LoggerConfig("TASK_USAGE", 2)
-        # task_usage_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "TASK-USAGE")
-        # task_event_logger_config = LoggerConfig("TASK_EVENT", 2)
-        # task_event_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "TASK-EVENT")
-
         task_usdeur_logger_config = LoggerConfig("TASK_USDEUR", 2)
         task_usdeur_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "USDEUR")
+        task_gbpusd_logger_config = LoggerConfig("TASK_GBPUSD", 2)
+        task_gbpusd_connector_config = ConnectorConfig("KAFKA_CONNECTOR", "GBPUSD")
 
-        cls.__log_manager = LogManager([(task_usdeur_logger_config, task_usdeur_connector_config)],
+        cls.__log_manager = LogManager([(task_usdeur_logger_config, task_usdeur_connector_config),
+                                        (task_gbpusd_logger_config, task_gbpusd_connector_config)],
                                        msg_num, rate)
 
         return cls

@@ -1,8 +1,8 @@
-# author: Khanh.Quang 
+# author: Huy.Nguyen
 # institute: Hanoi University of Science and Technology
 # file name: _connector_config.py
 # project name: LogProducer
-# date: 24/11/2020
+# date: 15/12/2020
 
 import msgpack
 

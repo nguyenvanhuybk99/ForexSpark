@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ef41cf5-d6c7-4900-8876-c43fb15b43b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/build_images.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/client-base/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/cluster-base/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/hdfs_system/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/hdfs_system/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/qk-client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/spark-base/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/spark-master/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BigDataCluster/spark-worker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/config/_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/config/_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/config/_connector_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/config/_connector_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/config/_logger_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/config/_logger_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/connector/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/connector/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/connector/_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/connector/_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/connector/_kafka_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/connector/_kafka_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/iostream/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/iostream/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/iostream/_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/iostream/_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/iostream/_task_usdeur_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/iostream/_task_usdeur_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/log_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/log_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/logger/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/logger/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/logger/_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/logger/_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/logger/_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/logger/_record.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/logger/_task_usdeur_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/logger/_task_usdeur_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogProducer/timer.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogProducer/timer.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lxOetE4gNUvJcpY4YFLx7Y40DF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GGTraceStreaming" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ef41cf5-d6c7-4900-8876-c43fb15b43b9" name="Default Changelist" comment="" />
+      <created>1608535373422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608535373422</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1608535386376">
+      <screen x="57" y="27" width="1863" height="1053" />
+    </state>
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl/57.27.1863.1053/1920.0.1920.1080@57.27.1863.1053" timestamp="1608535386376" />
+  </component>
+</project>

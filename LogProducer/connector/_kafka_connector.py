@@ -1,8 +1,8 @@
-# author: Khanh.Quang 
+# author: Huy.Nguyen
 # institute: Hanoi University of Science and Technology
 # file name: _kafka_connector.py
 # project name: LogProducer
-# date: 24/11/2020
+# date: 15/12/2020
 
 from kafka import KafkaProducer
 from typing import List

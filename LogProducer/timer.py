@@ -1,4 +1,4 @@
-# author: Khanh.Quang 
+# author: Huy.Nguyen
 # institute: Hanoi University of Science and Technology
 # file name: timer.py
 # project name: LogProducer
